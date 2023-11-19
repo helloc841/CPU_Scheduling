@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="646.0" prefWidth="943.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cpu_scheduling.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="645.0" prefWidth="602.0">
+         <children>
+            <Button fx:id="addbutton" layoutX="268.0" layoutY="472.0" mnemonicParsing="false" text="增加进程" />
+            <Label layoutX="24.0" layoutY="14.0" text="后备队列" />
+            <Label layoutX="159.0" layoutY="14.0" text="就绪队列" />
+            <Label layoutX="292.0" layoutY="14.0" text="运行队列" />
+            <Label layoutX="434.0" layoutY="14.0" text="挂起队列" />
+            <Label fx:id="backup1" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="77.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(137,207,240);" />
+            <Label fx:id="backup4" alignment="CENTER" layoutX="24.0" layoutY="185.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(137,207,240);" />
+            <Label fx:id="backup2" alignment="CENTER" layoutX="24.0" layoutY="113.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(137,207,240);" />
+            <Label fx:id="backup3" alignment="CENTER" layoutX="24.0" layoutY="149.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(137,207,240);" />
+            <Label fx:id="backup5" alignment="CENTER" layoutX="24.0" layoutY="221.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(137,207,240);" />
+            <Label fx:id="ready1" alignment="CENTER" layoutX="159.0" layoutY="77.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(204,232,207);" />
+            <Label fx:id="ready2" alignment="CENTER" layoutX="159.0" layoutY="113.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(204,232,207);" />
+            <Label fx:id="ready3" alignment="CENTER" layoutX="159.0" layoutY="149.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(204,232,207);" />
+            <Label fx:id="ready4" alignment="CENTER" layoutX="159.0" layoutY="185.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(204,232,207);" />
+            <Label fx:id="ready5" alignment="CENTER" layoutX="159.0" layoutY="221.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(204,232,207);" />
+            <Label fx:id="run1" alignment="CENTER" layoutX="292.0" layoutY="77.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,192,203);" />
+            <Label fx:id="run2" alignment="CENTER" layoutX="292.0" layoutY="113.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,192,203);" />
+            <Label fx:id="run3" alignment="CENTER" layoutX="292.0" layoutY="149.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,192,203);" />
+            <Label fx:id="run4" alignment="CENTER" layoutX="292.0" layoutY="185.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,192,203);" />
+            <Label fx:id="run5" alignment="CENTER" layoutX="292.0" layoutY="221.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,192,203);" />
+            <Label fx:id="hungup1" alignment="CENTER" layoutX="434.0" layoutY="77.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungup2" alignment="CENTER" layoutX="434.0" layoutY="113.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungup3" alignment="CENTER" layoutX="434.0" layoutY="149.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungup4" alignment="CENTER" layoutX="434.0" layoutY="185.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungup5" alignment="CENTER" layoutX="434.0" layoutY="221.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="labeltip1" layoutX="24.0" layoutY="262.0" prefHeight="46.0" prefWidth="466.0" text="提示信息:" />
+            <Label fx:id="labeltip2" layoutX="24.0" layoutY="316.0" prefHeight="135.0" prefWidth="466.0" text="PCB" />
+            <Label layoutX="551.0" layoutY="14.0" text="解挂队列" />
+            <Label fx:id="hungdown5" alignment="CENTER" layoutX="551.0" layoutY="221.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungdown4" alignment="CENTER" layoutX="551.0" layoutY="185.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungdown3" alignment="CENTER" layoutX="551.0" layoutY="149.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungdown2" alignment="CENTER" layoutX="551.0" layoutY="113.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Label fx:id="hungdown1" alignment="CENTER" layoutX="551.0" layoutY="77.0" prefHeight="36.0" prefWidth="72.0" style="-fx-background-color: rgb(255,255,204);" />
+            <Pane fx:id="storagePane" layoutX="700.0" layoutY="70.0" prefHeight="300.0" prefWidth="70.0" style="-fx-background-color: RGB(211,211,211);" />
+            <Label layoutX="700.0" layoutY="14.0" text="主存空间" />
+         </children>
+      </AnchorPane>
+   
+       <Label fx:id="welcomeText" />
+   </children>
+</VBox>
